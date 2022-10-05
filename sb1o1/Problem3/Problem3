@@ -1,0 +1,17 @@
+q. Explain upper bounded wildcards and lower bounded wildcards with an example.
+
+ans =>
+Upper Bounded :-
+1. This is decrease the restriction on a variabels,
+2. In class we declare Upper bound char ? using extend keyword,
+3. In Interface we declare Upper bound char ? using impelments keyword.
+
+Exm -> List<? extends Number>
+
+
+Lower Bounded Wildcards :-
+1. With the help of Lower Bounded Wildcards we can restrict unknown type to be super type.
+2. We can decalred this declaring wildcard character using ("?").
+3. We can use "super" keyword for this Lower Bounded wildcard.
+
+Exm -> List<? super Integer>
