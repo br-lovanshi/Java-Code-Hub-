@@ -1,0 +1,47 @@
+Exception :-  Exception is the object of some pre-defined classes created by the JVM when some logical error occur in our application.
+
+there are mainly two type of exceptions in java :-
+
+  1) Logical error :- Some kind of logical mistake in our application that's why JVM will never run our application normally.
+2) compiler error :- It is known as syntactical error these kinds of error show as at the compilation.
+
+Hierarchy of Exception :- 
+
+			Throwable
+				|
+-----------------------------------------
+|                                        |
+Exception                              Error
+	|					1. Stack OverFlow,2.OutOfMemory,3.VertualMachine
+1.IOExeption
+2.SQLException
+3.ClassNotFound
+4.RuntimeException
+|
+1.Arithmetic
+2.Nullpointer
+3.ArrayIndexOutOFBound
+4.NumberFormate
+
+
+For every error there are some predefined classes in java whever the logical error occur JVM will create the object of that perticular class .
+
+1.NullPointerExcepiton :- when our variable length is null and we try to get length().
+
+EXP :- String s = null;
+int n = s.length();
+
+ 2.ArithmeticException:- When we devide int by 0 it occur this excepiton.
+
+Exp:- 20/0;
+
+3.ArrayOutOFBoundException:- When we try to access the index who's not exist;
+Exp :- int [] arr = new int[3];
+int a = arr[30];
+
+4.NumberFormateException :- when we try to convert string(a,b,c) to Number.
+String s = "s";
+int n = Integer.parseInt(s);
+
+
+
